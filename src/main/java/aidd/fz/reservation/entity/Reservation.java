@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
+import aidd.fz.reservation.common.constant.ReservationStatus;
+
 @Data
 @NoArgsConstructor
 public class Reservation {
@@ -13,7 +15,7 @@ public class Reservation {
     private Integer seatId;
     private Timestamp startTime;
     private Timestamp endTime;
-    private String status;
+    private ReservationStatus status;
     private Timestamp checkInAt;
     private Timestamp createdAt;
     private Integer extendedFromReservationId;
